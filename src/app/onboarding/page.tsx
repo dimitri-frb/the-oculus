@@ -202,7 +202,7 @@ export default function OnboardingPage() {
           <div className="text-center">
             <div className="w-20 h-20 rounded-full bg-bg-card border border-border mx-auto mb-6 flex items-center justify-center">
               <img
-                src="/the-strategium/sacco.png"
+                src="/the-oculus/sacco.png"
                 alt="Sacco"
                 className="w-16 h-16 rounded-full object-cover"
               />
@@ -219,7 +219,7 @@ export default function OnboardingPage() {
               recommendations - all tailored to you.
             </p>
             <button
-              onClick={() => router.push("/the-strategium/dashboard")}
+              onClick={() => router.push("/the-oculus/dashboard")}
               className="bg-text-primary text-bg-primary px-8 py-3 rounded-full text-[15px] font-medium hover:bg-accent-hover transition-colors"
             >
               Enter The Oculus

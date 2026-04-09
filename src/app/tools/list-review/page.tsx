@@ -148,7 +148,7 @@ export default function ListReviewPage() {
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   <img
-                    src="/the-strategium/sacco.png"
+                    src="/the-oculus/sacco.png"
                     alt="Sacco - 2x World Champion"
                     className="w-8 h-8 rounded-full object-cover"
                   />

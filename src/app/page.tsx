@@ -85,7 +85,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center pt-14">
             <div className="flex items-center justify-center gap-3 mb-6">
               <img
-                src="/the-strategium/sacco.png"
+                src="/the-oculus/sacco.png"
                 alt="Sacco - 2x World Champion"
                 className="w-10 h-10 rounded-full object-cover"
               />

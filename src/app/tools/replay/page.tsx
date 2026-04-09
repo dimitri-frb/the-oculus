@@ -141,7 +141,7 @@ export default function ReplayPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <img
-                    src="/the-strategium/sacco.png"
+                    src="/the-oculus/sacco.png"
                     alt="Sacco - 2x World Champion"
                     className="w-8 h-8 rounded-full object-cover mt-0.5 shrink-0"
                   />
