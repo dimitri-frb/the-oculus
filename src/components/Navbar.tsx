@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-12">
           <Link href="/" className="text-text-primary font-semibold text-[15px] tracking-tight">
-            The Strategium
+            The Oculus
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

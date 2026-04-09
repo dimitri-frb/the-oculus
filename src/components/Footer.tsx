@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="text-text-primary font-medium text-sm mb-1">The Strategium</p>
+            <p className="text-text-primary font-medium text-sm mb-1">The Oculus</p>
             <p className="text-text-tertiary text-xs max-w-xs">
               World-champion Warhammer 40K coaching. From Neophyte to Warmaster.
             </p>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-6 text-text-tertiary text-[11px]">
-          &copy; {new Date().getFullYear()} The Strategium. Not affiliated with Games Workshop.
+          &copy; {new Date().getFullYear()} The Oculus. Not affiliated with Games Workshop.
         </div>
       </div>
     </footer>

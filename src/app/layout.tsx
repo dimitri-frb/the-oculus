@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Strategium | Warhammer 40K Coaching by World Champions",
+  title: "The Oculus | Your Warhammer 40K Coaching Platform",
   description:
     "Level up your Warhammer 40K game with world-champion coaching, masterclasses, and a gamified learning experience.",
 };

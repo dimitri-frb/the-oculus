@@ -186,7 +186,7 @@ export default function TrackerPage() {
               See the full picture
             </h3>
             <p className="text-text-secondary text-[13px] max-w-md mx-auto">
-              Your tournament results feed directly into your Strategium profile.
+              Your tournament results feed directly into your Oculus profile.
               Coaches can see your history before sessions - so every minute of
               coaching is tailored to you.
             </p>

@@ -89,7 +89,7 @@ export default function OnboardingPage() {
               What should we call you?
             </h1>
             <p className="text-text-secondary text-[14px] mb-8">
-              Pick a name for your Strategium profile.
+              Pick a name for your Oculus profile.
             </p>
             <input
               type="text"
@@ -222,7 +222,7 @@ export default function OnboardingPage() {
               onClick={() => router.push("/the-strategium/dashboard")}
               className="bg-text-primary text-bg-primary px-8 py-3 rounded-full text-[15px] font-medium hover:bg-accent-hover transition-colors"
             >
-              Enter The Strategium
+              Enter The Oculus
             </button>
           </div>
         )}

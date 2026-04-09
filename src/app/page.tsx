@@ -226,7 +226,7 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 {
-                  name: "The Strategium",
+                  name: "The Oculus",
                   desc: "Original content by Sacco",
                   href: "#",
                   tag: "Original",
