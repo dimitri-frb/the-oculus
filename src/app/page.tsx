@@ -83,9 +83,16 @@ export default function Home() {
         {/* Hero — personalized journey focus */}
         <section className="min-h-[90vh] flex items-center justify-center px-6">
           <div className="max-w-3xl mx-auto text-center pt-14">
-            <p className="text-accent-gold text-[13px] font-medium tracking-wide uppercase mb-6">
-              By a 2x World Champion
-            </p>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <img
+                src="/the-strategium/sacco.png"
+                alt="Sacco — 2x World Champion"
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <p className="text-accent-gold text-[13px] font-medium tracking-wide uppercase">
+                By Sacco — 2x World Champion
+              </p>
+            </div>
             <h1 className="text-5xl sm:text-6xl md:text-[72px] font-semibold text-text-primary leading-[1.05] tracking-tight mb-6">
               Your 40K journey,
               <br />

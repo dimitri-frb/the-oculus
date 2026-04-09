@@ -146,9 +146,16 @@ export default function ListReviewPage() {
 
               {/* Suggestions */}
               <div>
-                <h3 className="text-text-primary font-medium text-[15px] mb-3">
-                  Sacco&apos;s suggestions
-                </h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <img
+                    src="/the-strategium/sacco.png"
+                    alt="Sacco — 2x World Champion"
+                    className="w-8 h-8 rounded-full object-cover"
+                  />
+                  <h3 className="text-text-primary font-medium text-[15px]">
+                    Sacco&apos;s suggestions
+                  </h3>
+                </div>
                 <div className="space-y-2">
                   {result.suggestions.map((s) => (
                     <div

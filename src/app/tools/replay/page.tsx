@@ -139,9 +139,21 @@ export default function ReplayPage() {
                     Turning point: {result.turningPoint}
                   </span>
                 </div>
-                <p className="text-text-secondary text-[13px] leading-relaxed">
-                  {result.summary}
-                </p>
+                <div className="flex items-start gap-3">
+                  <img
+                    src="/the-strategium/sacco.png"
+                    alt="Sacco — 2x World Champion"
+                    className="w-8 h-8 rounded-full object-cover mt-0.5 shrink-0"
+                  />
+                  <div>
+                    <p className="text-text-primary text-[12px] font-medium mb-1">
+                      Sacco&apos;s analysis
+                    </p>
+                    <p className="text-text-secondary text-[13px] leading-relaxed">
+                      {result.summary}
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Decision tree */}
