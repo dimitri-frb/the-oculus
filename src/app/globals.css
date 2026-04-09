@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #0d0f14;
-  --bg-secondary: #141721;
-  --bg-card: #1a1e2e;
-  --bg-card-hover: #222740;
-  --accent-gold: #d4a843;
-  --accent-gold-light: #f0d078;
-  --accent-red: #c0392b;
-  --accent-blue: #3498db;
-  --accent-green: #27ae60;
-  --accent-purple: #8e44ad;
-  --text-primary: #e8e6e1;
-  --text-secondary: #9a978f;
-  --text-muted: #5a584f;
-  --border-subtle: #2a2e3e;
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-card: #f5f5f7;
+  --bg-card-hover: #ebebed;
+  --bg-elevated: #ffffff;
+  --accent: #1d1d1f;
+  --accent-hover: #000000;
+  --accent-gold: #a17c32;
+  --accent-gold-hover: #8a6a2a;
+  --accent-gold-subtle: rgba(161, 124, 50, 0.06);
+  --accent-gold-border: rgba(161, 124, 50, 0.15);
+  --text-primary: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #aeaeb2;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.15);
 }
 
 @theme inline {
@@ -23,76 +25,40 @@
   --color-bg-secondary: var(--bg-secondary);
   --color-bg-card: var(--bg-card);
   --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-accent-gold: var(--accent-gold);
-  --color-accent-gold-light: var(--accent-gold-light);
-  --color-accent-red: var(--accent-red);
-  --color-accent-blue: var(--accent-blue);
-  --color-accent-green: var(--accent-green);
-  --color-accent-purple: var(--accent-purple);
+  --color-accent-gold-hover: var(--accent-gold-hover);
+  --color-accent-gold-subtle: var(--accent-gold-subtle);
+  --color-accent-gold-border: var(--accent-gold-border);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
-  --color-text-muted: var(--text-muted);
-  --color-border-subtle: var(--border-subtle);
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Cinzel', serif;
+  --color-text-tertiary: var(--text-tertiary);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-primary);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border-subtle);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-gold);
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--text-tertiary); border-radius: 3px; }
 
-/* XP Bar animation */
-@keyframes xp-fill {
-  from { width: 0%; }
-}
-.xp-bar-animated {
-  animation: xp-fill 1.5s ease-out;
-}
+@keyframes xp-fill { from { width: 0%; } }
+.xp-bar-animated { animation: xp-fill 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
 
-/* Glow effect */
-.glow-gold {
-  box-shadow: 0 0 20px rgba(212, 168, 67, 0.3), 0 0 60px rgba(212, 168, 67, 0.1);
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
 }
-
-.glow-gold-subtle {
-  box-shadow: 0 0 10px rgba(212, 168, 67, 0.15);
-}
-
-/* Card hover effect */
-.card-hover {
-  transition: all 0.3s ease;
-}
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 168, 67, 0.1);
-}
-
-/* Rank badge shimmer */
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-.rank-shimmer {
-  background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-gold-light) 50%, var(--accent-gold) 100%);
-  background-size: 200% auto;
-  animation: shimmer 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }

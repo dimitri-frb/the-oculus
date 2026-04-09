@@ -2,49 +2,32 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-secondary border-t border-border-subtle mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded bg-accent-gold flex items-center justify-center">
-                <span className="text-bg-primary font-bold text-sm font-[Cinzel]">S</span>
-              </div>
-              <span className="font-[Cinzel] text-lg font-bold text-accent-gold">
-                The Strategium
-              </span>
-            </div>
-            <p className="text-text-secondary text-sm max-w-md">
-              Your personal war council. Learn from world champions, master your
-              faction, and climb the ranks in the most immersive Warhammer 40K
-              coaching platform ever built.
+    <footer className="border-t border-border mt-auto">
+      <div className="max-w-6xl mx-auto px-6 py-8">
+        <div className="flex flex-col md:flex-row justify-between gap-8">
+          <div>
+            <p className="text-text-primary font-medium text-sm mb-1">The Strategium</p>
+            <p className="text-text-tertiary text-xs max-w-xs">
+              World-champion Warhammer 40K coaching. From Neophyte to Warmaster.
             </p>
           </div>
-          <div>
-            <h4 className="font-semibold text-text-primary mb-3 text-sm uppercase tracking-wider">
-              Platform
-            </h4>
+          <div className="flex gap-12 text-xs">
             <div className="space-y-2">
-              <Link href="/content" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Free Content</Link>
-              <Link href="/content" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Premium Library</Link>
-              <Link href="/coaching" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Group Sessions</Link>
-              <Link href="/coaching" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">1-on-1 Coaching</Link>
+              <p className="text-text-secondary font-medium">Platform</p>
+              <Link href="/content" className="block text-text-tertiary hover:text-text-secondary transition-colors">Content</Link>
+              <Link href="/coaching" className="block text-text-tertiary hover:text-text-secondary transition-colors">Coaching</Link>
+              <Link href="/dashboard" className="block text-text-tertiary hover:text-text-secondary transition-colors">Profile</Link>
             </div>
-          </div>
-          <div>
-            <h4 className="font-semibold text-text-primary mb-3 text-sm uppercase tracking-wider">
-              Community
-            </h4>
             <div className="space-y-2">
-              <a href="#" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Discord</a>
-              <a href="#" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">YouTube</a>
-              <a href="#" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Instagram</a>
-              <a href="#" className="block text-text-secondary hover:text-accent-gold text-sm transition-colors">Twitter / X</a>
+              <p className="text-text-secondary font-medium">Community</p>
+              <a href="#" className="block text-text-tertiary hover:text-text-secondary transition-colors">Discord</a>
+              <a href="#" className="block text-text-tertiary hover:text-text-secondary transition-colors">YouTube</a>
+              <a href="#" className="block text-text-tertiary hover:text-text-secondary transition-colors">Twitter / X</a>
             </div>
           </div>
         </div>
-        <div className="border-t border-border-subtle mt-8 pt-8 text-center text-text-muted text-xs">
-          &copy; {new Date().getFullYear()} The Strategium. All rights reserved. Not affiliated with Games Workshop.
+        <div className="border-t border-border mt-8 pt-6 text-text-tertiary text-[11px]">
+          &copy; {new Date().getFullYear()} The Strategium. Not affiliated with Games Workshop.
         </div>
       </div>
     </footer>
