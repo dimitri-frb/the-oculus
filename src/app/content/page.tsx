@@ -51,7 +51,7 @@ export default function ContentPage() {
               >
                 <div className="relative aspect-video bg-bg-card flex items-center justify-center">
                   <span className="text-text-tertiary text-3xl">
-                    {item.type === "Faction Focus" ? "&#9876;" : item.type === "Masterclass" ? "&#9733;" : item.type === "Tournament Report" ? "&#9813;" : "&#9670;"}
+                    {item.type === "Faction Focus" ? "\u2694" : item.type === "Masterclass" ? "\u2605" : item.type === "Tournament Report" ? "\u265B" : "\u25C6"}
                   </span>
                   {item.premium && (
                     <span className="absolute top-2.5 right-2.5 bg-text-primary text-bg-primary text-[10px] font-semibold px-2 py-0.5 rounded-full">
