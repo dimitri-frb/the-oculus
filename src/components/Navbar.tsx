@@ -6,6 +6,8 @@ import { useState } from "react";
 const navLinks = [
   { href: "/content", label: "Content" },
   { href: "/coaching", label: "Coaching" },
+  { href: "/tools/list-review", label: "AI Tools" },
+  { href: "/tools/tracker", label: "Tracker" },
   { href: "/dashboard", label: "Profile" },
 ];
 
@@ -66,6 +68,13 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/tools/replay"
+              onClick={() => setMobileOpen(false)}
+              className="block text-text-secondary hover:text-text-primary text-[15px]"
+            >
+              Replay Analysis
+            </Link>
           </div>
         </div>
       )}
