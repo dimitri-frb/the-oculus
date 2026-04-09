@@ -74,6 +74,11 @@ export default function ContentPage() {
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-accent-gold text-[10px] font-medium">{item.type}</span>
                     <span className="text-text-tertiary text-[10px]">+{item.xpReward} XP</span>
+                    {(item as any).source && (
+                      <span className="text-[10px] font-medium text-text-secondary bg-bg-card px-1.5 py-0.5 rounded-full ml-auto">
+                        via {(item as any).source}
+                      </span>
+                    )}
                   </div>
                   <h3 className="text-text-primary text-[14px] font-medium mb-2 line-clamp-2">
                     {item.title}

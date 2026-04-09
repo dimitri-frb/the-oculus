@@ -1,4 +1,4 @@
-// Mock data for the platform — replace with real data/API later
+// Mock data for the platform - replace with real data/API later
 
 export const RANKS = [
   { level: 1, title: "Neophyte", xpRequired: 0, icon: "🛡️" },
@@ -193,6 +193,37 @@ export const CONTENT_ITEMS = [
     languages: ["EN", "FR", "ES"],
     views: 5400,
     xpReward: 150,
+    source: undefined,
+  },
+  {
+    id: "7",
+    title: "Competitive 40K Meta Update",
+    type: "Strategy",
+    coach: "Art of War",
+    coachTitle: "Community Partner",
+    duration: "52 min",
+    thumbnail: "/thumbnails/aow.jpg",
+    premium: false,
+    languages: ["EN"],
+    views: 45000,
+    xpReward: 50,
+    source: "Art of War 40K",
+    sourceUrl: "https://www.youtube.com/@ArtofWar40k",
+  },
+  {
+    id: "8",
+    title: "Competitive Mindset and Tilt Control",
+    type: "Strategy",
+    coach: "Fireside 40K",
+    coachTitle: "Community Partner",
+    duration: "1h 05min",
+    thumbnail: "/thumbnails/fireside.jpg",
+    premium: false,
+    languages: ["EN"],
+    views: 12000,
+    xpReward: 50,
+    source: "Fireside 40K",
+    sourceUrl: "https://www.youtube.com/@Fireside40K",
   },
 ];
 

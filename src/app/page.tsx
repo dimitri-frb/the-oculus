@@ -6,7 +6,7 @@ const journeySteps = [
   {
     step: "01",
     title: "Pick your faction",
-    desc: "Tell us what you play. Your entire experience — content, coaching suggestions, meta insights — adapts to your army.",
+    desc: "Tell us what you play. Your entire experience - content, coaching suggestions, meta insights - adapts to your army.",
   },
   {
     step: "02",
@@ -21,7 +21,7 @@ const journeySteps = [
   {
     step: "04",
     title: "Train with champions",
-    desc: "Group sessions or 1-on-1 coaching — your tournament history and profile travel with you so every minute counts.",
+    desc: "Group sessions or 1-on-1 coaching - your tournament history and profile travel with you so every minute counts.",
   },
   {
     step: "05",
@@ -40,7 +40,7 @@ const tools = [
   {
     href: "/tools/replay",
     label: "Match Replay Analysis",
-    desc: "Upload a game log. Get annotated decision trees — what worked and what to fix.",
+    desc: "Upload a game log. Get annotated decision trees - what worked and what to fix.",
     tag: "AI-Powered",
   },
   {
@@ -80,17 +80,17 @@ export default function Home() {
     <>
       <Navbar />
       <main className="flex-1">
-        {/* Hero — personalized journey focus */}
+        {/* Hero - personalized journey focus */}
         <section className="min-h-[90vh] flex items-center justify-center px-6">
           <div className="max-w-3xl mx-auto text-center pt-14">
             <div className="flex items-center justify-center gap-3 mb-6">
               <img
                 src="/the-strategium/sacco.png"
-                alt="Sacco — 2x World Champion"
+                alt="Sacco - 2x World Champion"
                 className="w-10 h-10 rounded-full object-cover"
               />
               <p className="text-accent-gold text-[13px] font-medium tracking-wide uppercase">
-                By Sacco — 2x World Champion
+                By Sacco - 2x World Champion
               </p>
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-[72px] font-semibold text-text-primary leading-[1.05] tracking-tight mb-6">
@@ -104,7 +104,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
-                href="/dashboard"
+                href="/onboarding"
                 className="bg-text-primary text-bg-primary px-8 py-3 rounded-full text-[15px] font-medium hover:bg-accent-hover transition-colors"
               >
                 Start for free
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Journey — the personalized path */}
+        {/* Journey - the personalized path */}
         <section className="py-24 px-6">
           <div className="max-w-4xl mx-auto">
             <div className="max-w-xl mb-16">
@@ -143,7 +143,7 @@ export default function Home() {
                 Built around you.
               </h2>
               <p className="text-text-secondary">
-                Not a content library — a personalized training path.
+                Not a content library - a personalized training path.
                 Everything adapts to your faction, your skill level, and where
                 you want to go.
               </p>
@@ -182,7 +182,7 @@ export default function Home() {
               </h2>
               <p className="text-text-secondary">
                 Get feedback on your lists, analyze your games, and track your
-                competitive growth — all in one platform.
+                competitive growth - all in one platform.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -210,7 +210,75 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ranks — brief */}
+        {/* Content partners */}
+        <section className="py-24 px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-4">
+                The best content. All in one place.
+              </h2>
+              <p className="text-text-secondary max-w-lg mx-auto">
+                We curate the best 40K content from across the community,
+                not just ours. Your learning path pulls from every top
+                source available.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                {
+                  name: "The Strategium",
+                  desc: "Original content by Sacco",
+                  href: "#",
+                  tag: "Original",
+                },
+                {
+                  name: "Art of War 40K",
+                  desc: "Meta analysis & strategy",
+                  href: "https://www.youtube.com/@ArtofWar40k",
+                  tag: "Partner",
+                },
+                {
+                  name: "Fireside 40K",
+                  desc: "Podcast, tools & training",
+                  href: "https://www.youtube.com/@Fireside40K",
+                  tag: "Partner",
+                },
+                {
+                  name: "Auspex Tactics",
+                  desc: "Rules & unit analysis",
+                  href: "https://www.youtube.com/@AuspexTactics",
+                  tag: "Community",
+                },
+              ].map((p) => (
+                <a
+                  key={p.name}
+                  href={p.href}
+                  target={p.href !== "#" ? "_blank" : undefined}
+                  rel={p.href !== "#" ? "noopener noreferrer" : undefined}
+                  className="group p-5 rounded-2xl border border-border hover-lift text-center"
+                >
+                  <div className="w-12 h-12 rounded-full bg-bg-card border border-border mx-auto mb-3 flex items-center justify-center text-[15px] font-bold text-text-primary">
+                    {p.name.charAt(0)}
+                  </div>
+                  <span className="text-accent-gold text-[9px] font-medium uppercase tracking-wider">
+                    {p.tag}
+                  </span>
+                  <h3 className="text-text-primary font-medium text-[14px] mt-1 mb-1 group-hover:text-accent-gold transition-colors">
+                    {p.name}
+                  </h3>
+                  <p className="text-text-tertiary text-[11px]">{p.desc}</p>
+                </a>
+              ))}
+            </div>
+            <p className="text-text-tertiary text-[12px] text-center mt-8">
+              We surface the best content from across the community so you
+              always have the most relevant, up-to-date learning path,
+              regardless of the source.
+            </p>
+          </div>
+        </section>
+
+        {/* Ranks - brief */}
         <section className="py-24 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-4">
@@ -310,10 +378,10 @@ export default function Home() {
             A path built just for you.
           </p>
           <Link
-            href="/dashboard"
+            href="/onboarding"
             className="inline-flex bg-text-primary text-bg-primary px-8 py-3 rounded-full text-[15px] font-medium hover:bg-accent-hover transition-colors"
           >
-            Create your profile — it&apos;s free
+            Create your profile - it&apos;s free
           </Link>
         </section>
       </main>

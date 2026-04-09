@@ -33,7 +33,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/dashboard"
+              href="/onboarding"
               className="bg-text-primary text-bg-primary px-4 py-1.5 rounded-full text-[13px] font-medium hover:bg-accent-hover transition-colors"
             >
               Get Started

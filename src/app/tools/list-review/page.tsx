@@ -14,14 +14,14 @@ const MOCK_FEEDBACK = {
     "Strong command point efficiency",
   ],
   concerns: [
-    "Low anti-tank output — you'll struggle into Knights and heavy vehicle lists",
-    "No reliable deep strike threat — predictable deployment",
+    "Low anti-tank output - you'll struggle into Knights and heavy vehicle lists",
+    "No reliable deep strike threat - predictable deployment",
     "Support characters are over-invested for what they enable",
   ],
   suggestions: [
-    "Swap one Wraithguard unit for Fire Dragons in a Wave Serpent — solves your anti-tank gap",
+    "Swap one Wraithguard unit for Fire Dragons in a Wave Serpent - solves your anti-tank gap",
     "Consider Swooping Hawks for deep strike flexibility and action monkey plays",
-    "Drop the Autarch upgrade — the points are better spent on a Farseer for Guide",
+    "Drop the Autarch upgrade - the points are better spent on a Farseer for Guide",
   ],
 };
 
@@ -149,7 +149,7 @@ export default function ListReviewPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <img
                     src="/the-strategium/sacco.png"
-                    alt="Sacco — 2x World Champion"
+                    alt="Sacco - 2x World Champion"
                     className="w-8 h-8 rounded-full object-cover"
                   />
                   <h3 className="text-text-primary font-medium text-[15px]">

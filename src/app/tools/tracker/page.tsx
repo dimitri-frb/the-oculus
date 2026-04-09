@@ -26,7 +26,7 @@ const MOCK_STATS = {
       faction: "Aeldari",
     },
     {
-      name: "Local RTT — Waaagh Club",
+      name: "Local RTT - Waaagh Club",
       date: "Jan 2026",
       placement: "1st / 24",
       record: "3-0",
@@ -97,7 +97,7 @@ export default function TrackerPage() {
             </h1>
             <p className="text-text-secondary text-[15px]">
               Link your BCP or ITC account and track your competitive journey
-              over time — all in one place.
+              over time - all in one place.
             </p>
           </div>
 
@@ -187,7 +187,7 @@ export default function TrackerPage() {
             </h3>
             <p className="text-text-secondary text-[13px] max-w-md mx-auto">
               Your tournament results feed directly into your Strategium profile.
-              Coaches can see your history before sessions — so every minute of
+              Coaches can see your history before sessions - so every minute of
               coaching is tailored to you.
             </p>
           </div>

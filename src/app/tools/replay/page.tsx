@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const MOCK_ANALYSIS = {
-  result: "Loss — 72 vs 85",
+  result: "Loss - 72 vs 85",
   turningPoint: "Turn 3",
   summary:
     "You were ahead on primary until Turn 3 where an aggressive push with Wraithguard left your home objective exposed. Your opponent capitalized with a deep strike charge, flipping two objectives and never looking back.",
@@ -15,14 +15,14 @@ const MOCK_ANALYSIS = {
       phase: "Movement",
       rating: "good" as const,
       decision: "Screened deep strike zones with Rangers",
-      note: "Good defensive play — forced opponent to commit to less optimal positions.",
+      note: "Good defensive play - forced opponent to commit to less optimal positions.",
     },
     {
       turn: 2,
       phase: "Shooting",
       rating: "good" as const,
       decision: "Focused fire on opponent's screening unit",
-      note: "Correct target priority — opened a lane for your Turn 3 play.",
+      note: "Correct target priority - opened a lane for your Turn 3 play.",
     },
     {
       turn: 3,
@@ -36,7 +36,7 @@ const MOCK_ANALYSIS = {
       phase: "Command",
       rating: "neutral" as const,
       decision: "Used CP re-roll on charge instead of saving for defensive strat",
-      note: "Debatable — the charge was important, but Feigned Retreat on Turn 4 would have saved 10 VP.",
+      note: "Debatable - the charge was important, but Feigned Retreat on Turn 4 would have saved 10 VP.",
     },
     {
       turn: 4,
@@ -76,7 +76,7 @@ export default function ReplayPage() {
             </h1>
             <p className="text-text-secondary text-[15px]">
               Upload your game log and get an annotated breakdown of every key
-              decision — what worked, what didn&apos;t, and what Sacco would have
+              decision - what worked, what didn&apos;t, and what Sacco would have
               done differently.
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function ReplayPage() {
                 <div className="flex items-start gap-3">
                   <img
                     src="/the-strategium/sacco.png"
-                    alt="Sacco — 2x World Champion"
+                    alt="Sacco - 2x World Champion"
                     className="w-8 h-8 rounded-full object-cover mt-0.5 shrink-0"
                   />
                   <div>
